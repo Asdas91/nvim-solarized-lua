@@ -292,7 +292,7 @@ function M.load_syntax(colors)
 	syntax['Delimiter'] = syntax['Special']
 	syntax['Exception'] = syntax['Statement']
 	syntax['Float'] = syntax['Constant']
-	syntax['Function'] = syntax['Identifier']
+	syntax['Function'] = syntax['Directory']
 	syntax['Include'] = syntax['PreProc']
 	syntax['Keyword'] = syntax['Statement']
 	syntax['Label'] = syntax['Statement']
