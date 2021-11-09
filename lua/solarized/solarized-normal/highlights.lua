@@ -128,7 +128,7 @@ function M.load_syntax(colors)
 	syntax['Error'] = {fg=colors.red,bg=colors.err_bg,style='bold,reverse'}
 	syntax['Identifier'] = {fg=colors.base0}
 	syntax['Ignore'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
-	syntax['PreProc'] = {fg=colors.orange}
+	syntax['PreProc'] = {fg=colors.yellow}
 	syntax['Special'] = {fg=colors.none}
 	syntax['Statement'] = {fg=colors.green}
 	syntax['Todo'] = {fg=colors.magenta,style='bold'}
