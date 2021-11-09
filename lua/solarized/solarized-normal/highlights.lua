@@ -104,7 +104,7 @@ function M.load_syntax(colors)
 	syntax['ColorColumn'] = {fg=colors.none,bg=colors.base02}
 	syntax['Conceal'] = {fg=colors.blue}
 	syntax['CursorColumn'] = {fg=colors.none,bg=colors.base02}
-	syntax['Directory'] = {fg=colors.blue}
+	syntax['Directory'] = {fg=colors.green}
 	syntax['EndOfBuffer'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
 	syntax['ErrorMsg'] = {fg=colors.red,bg=colors.err_bg,style='reverse'}
 	syntax['IncSearch'] = {fg=colors.orange,style='standout'}
@@ -126,11 +126,11 @@ function M.load_syntax(colors)
 	syntax['Constant'] = {fg=colors.cyan}
 	syntax['CursorIM'] = {fg=colors.none,bg=colors.base1}
 	syntax['Error'] = {fg=colors.red,bg=colors.err_bg,style='bold,reverse'}
-	syntax['Identifier'] = {fg=colors.base0}
+	syntax['Identifier'] = {fg=colors.blue}
 	syntax['Ignore'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
 	syntax['PreProc'] = {fg=colors.yellow}
 	syntax['Special'] = {fg=colors.none}
-	syntax['Statement'] = {fg=colors.green}
+	syntax['Statement'] = {fg=colors.yellow}
 	syntax['Todo'] = {fg=colors.magenta,style='bold'}
 	syntax['Type'] = {fg=colors.yellow}
 	syntax['Underlined'] = {fg=colors.violet}
@@ -298,7 +298,7 @@ function M.load_syntax(colors)
 	syntax['Label'] = syntax['Statement']
 	syntax['Macro'] = syntax['PreProc']
 	syntax['Number'] = syntax['Constant']
-	syntax['Operator'] = syntax['Statement']
+	syntax['Operator'] = syntax['Special']
 	syntax['PreCondit'] = syntax['PreProc']
 	syntax['QuickFixLine'] = syntax['Search']
 	syntax['Repeat'] = syntax['Statement']
