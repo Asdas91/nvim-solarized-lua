@@ -413,6 +413,27 @@ function M.load_syntax(colors)
 	syntax['VgitSignChange'] = syntax['DiffChange']
 	syntax['VGitSignRemove'] = syntax['DiffDelete']
 
+    -- Dap-ui
+    syntax['DapUIVariable'] = syntax['Normal']
+    syntax['DapUIScope'] = syntax['Identifier']
+    syntax['DapUIType'] = syntax['Keyword']
+    syntax['DapUIDecoration'] = syntax['DapUIScope']
+    syntax['DapUIThread'] = syntax['Constant']
+    syntax['DapUIStoppedThread'] = syntax['DapUIScope']
+    syntax['DapUIFrameName'] = syntax['DapUIFrameName']
+    syntax['DapUISource'] = syntax['vimCommentString']
+    syntax['DapUILineNumber'] = syntax['DapUIScope']
+    syntax['DapUIFloatBorder'] = syntax['DapUIScope']
+    syntax['DapUIWatchesHeader'] = syntax['DapUIScope']
+    syntax['DapUIWatchesEmpty'] = syntax['gitcommitdiscardedtype']
+    syntax['DapUIWatchesValue'] = syntax['DapUIThread']
+    syntax['DapUIWatchesError'] = syntax['DapUIWatchesEmpty']
+    syntax['DapUIWatchesFrame'] = syntax['DapUIWatchesEmpty']
+    syntax['DapUIBreakpointsPath'] = syntax['DapUIScope']
+    syntax['DapUIBreakpointsInfo'] = syntax['DapUIThread']
+    syntax['DapUIBreakpointsCurrentLine'] = syntax['DapUIThread']
+    syntax['DapUIBreakpointsLine'] = syntax['DapUILineNumber']
+
 	for group, highlights in pairs(syntax) do
 		utils.highlighter(group, highlights)
 	end
